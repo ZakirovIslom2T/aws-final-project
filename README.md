@@ -11,7 +11,7 @@ Here's a **step-by-step guide** to run your full AWS-based application that conn
 **SSH into EC2:**
 
 ```bash
-ssh -i your-key.pem ubuntu@<your-ec2-public-ip>
+ssh -i "C:\Users\Islam\Downloads\rds--islam.pem" ubuntu@ec2-3-110-28-118.ap-south-1.compute.amazonaws.com
 ```
 
 **Activate virtual environment:**
@@ -40,7 +40,7 @@ app.run(host='0.0.0.0', port=5000, debug=True)
 In your browser, open:
 
 ```
-http://<your-ec2-public-ip>:5000/data
+http://3.110.28.118:5000/data
 ```
 
 You should see JSON output from your RDS database.
@@ -50,12 +50,12 @@ You should see JSON output from your RDS database.
 ### 🟢 2. **Upload & Serve HTML via S3**
 
 1. Open AWS Console → S3 → Create a bucket (enable static website hosting).
-2. Upload your `index.html` file.
+2. Upload your `index_islam.html` file.
 3. Make it public (or use a bucket policy).
 4. Note the **S3 static website URL** (e.g.):
 
    ```
-   http://<your-bucket>.s3-website-<region>.amazonaws.com
+   http://[<your-bucket>.s3-website-<region>.amazonaws.com](http://islam-2t.s3-website.ap-south-1.amazonaws.com/)
    ```
 
 ✅ Visit the link — your HTML page should load with buttons and fetch/display data.
@@ -75,7 +75,7 @@ You should see JSON output from your RDS database.
         host="your-rds-endpoint",
         database="db_islam",
         user="postgres",
-        password="your_password",
+        password="postgres",
         port="5432"
     )
     ```
