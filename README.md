@@ -100,4 +100,6 @@ nohup python3 app.py &
 
 ---
 
-Do you want me to review your current `index.html` and `app.py` to make sure everything aligns perfectly with this setup?
+S3 Bucket: https://ap-south-1.console.aws.amazon.com/s3/buckets/islam-2t?region=ap-south-1&tab=objects&bucketType=general
+EC2 Instance: https://ap-south-1.console.aws.amazon.com/ec2/home?region=ap-south-1#InstanceDetails:instanceId=i-0e38785bc769ae2fc
+RDS Database: https://ap-south-1.console.aws.amazon.com/rds/home?region=ap-south-1#database:id=rds-islam;is-cluster=false
